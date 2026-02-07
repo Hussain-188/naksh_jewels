@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Minimalist Watch",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
+    "description": "Elegant timepiece with leather strap"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Headphones",
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
+    "description": "Premium sound quality"
+  },
+  {
+    "id": 3,
+    "name": "Leather Backpack",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop",
+    "description": "Handcrafted genuine leather"
+  },
+  {
+    "id": 4,
+    "name": "Ceramic Mug Set",
+    "price": 34.99,
+    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400&h=400&fit=crop",
+    "description": "Set of 4 handmade mugs"
+  },
+  {
+    "id": 5,
+    "name": "Desk Lamp",
+    "price": 59.99,
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&h=400&fit=crop",
+    "description": "Modern LED with adjustable arm"
+  },
+  {
+    "id": 6,
+    "name": "Succulent Planter",
+    "price": 24.99,
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop",
+    "description": "Geometric concrete planter"
+  },
+  {
+    "id": 7,
+    "name": "Notebook Set",
+    "price": 18.99,
+    "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400&h=400&fit=crop",
+    "description": "Premium lined notebooks"
+  },
+  {
+    "id": 8,
+    "name": "Sunglasses",
+    "price": 79.99,
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop",
+    "description": "Classic aviator style"
+  }
+]
