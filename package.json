@@ -1,0 +1,16 @@
+{
+  "name": "naksh-jewels",
+  "version": "1.0.0",
+  "description": "Naksh Jewels - E-commerce platform for jewelry",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "build:frontend": "cd frontend && npm run build"
+  }
+}

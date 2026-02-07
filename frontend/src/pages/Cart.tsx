@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext';
-import CartItem from '../components/CartItem';
-import styles from '../styles/Cart.module.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
+import CartItem from "../components/CartItem";
+import styles from "../styles/Cart.module.css";
 
 const Cart: React.FC = () => {
   const { items, totalItems, totalPrice, clearCart } = useCart();
 
-  const shipping = totalItems > 0 ? 9.99 : 0;
-  const tax = totalPrice * 0.08;
+  const shipping = totalItems > 0 ? 500 : 0; // ₹500 shipping
+  const tax = totalPrice * 0.18; // 18% GST
   const grandTotal = totalPrice + shipping + tax;
 
   if (items.length === 0) {
@@ -68,28 +68,28 @@ const Cart: React.FC = () => {
                 Subtotal ({totalItems} items)
               </span>
               <span className={styles.summaryValue}>
-                ${totalPrice.toFixed(2)}
+                ₹{totalPrice.toLocaleString("en-IN")}
               </span>
             </div>
 
             <div className={styles.summaryRow}>
               <span className={styles.summaryLabel}>Shipping</span>
               <span className={styles.summaryValue}>
-                ${shipping.toFixed(2)}
+                ₹{shipping.toLocaleString("en-IN")}
               </span>
             </div>
 
             <div className={styles.summaryRow}>
-              <span className={styles.summaryLabel}>Tax (8%)</span>
+              <span className={styles.summaryLabel}>Tax (18% GST)</span>
               <span className={styles.summaryValue}>
-                ${tax.toFixed(2)}
+                ₹{tax.toLocaleString("en-IN")}
               </span>
             </div>
 
             <div className={`${styles.summaryRow} ${styles.summaryTotal}`}>
               <span className={styles.summaryLabel}>Total</span>
               <span className={styles.summaryValue}>
-                ${grandTotal.toFixed(2)}
+                ₹{grandTotal.toLocaleString("en-IN")}
               </span>
             </div>
 

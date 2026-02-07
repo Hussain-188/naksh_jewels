@@ -1,6 +1,6 @@
-import React from 'react';
-import { CartItem as CartItemType, useCart } from '../context/CartContext';
-import styles from '../styles/CartItem.module.css';
+import React from "react";
+import { CartItem as CartItemType, useCart } from "../context/CartContext";
+import styles from "../styles/CartItem.module.css";
 
 interface CartItemProps {
   item: CartItemType;
@@ -12,16 +12,14 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
   return (
     <div className={styles.cartItem}>
       <div className={styles.imageContainer}>
-        <img
-          src={item.image}
-          alt={item.name}
-          className={styles.image}
-        />
+        <img src={item.image} alt={item.name} className={styles.image} />
       </div>
 
       <div className={styles.details}>
         <h3 className={styles.name}>{item.name}</h3>
-        <p className={styles.price}>${item.price.toFixed(2)} each</p>
+        <p className={styles.price}>
+          ₹{item.price.toLocaleString("en-IN")} each
+        </p>
 
         <div className={styles.actions}>
           <div className={styles.quantityControl}>
@@ -64,7 +62,7 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
           </button>
 
           <span className={styles.subtotal}>
-            ${(item.price * item.quantity).toFixed(2)}
+            ₹{(item.price * item.quantity).toLocaleString("en-IN")}
           </span>
         </div>
       </div>

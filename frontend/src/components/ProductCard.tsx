@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Product, useCart } from '../context/CartContext';
-import styles from '../styles/ProductCard.module.css';
+import React, { useState } from "react";
+import { Product, useCart } from "../context/CartContext";
+import styles from "../styles/ProductCard.module.css";
 
 interface ProductCardProps {
   product: Product;
@@ -26,18 +26,18 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           loading="lazy"
         />
       </div>
-      
+
       <div className={styles.content}>
         <h3 className={styles.name}>{product.name}</h3>
         <p className={styles.description}>{product.description}</p>
-        
+
         <div className={styles.footer}>
           <span className={styles.price}>
-            ${product.price.toFixed(2)}
+            ₹{product.price.toLocaleString("en-IN")}
           </span>
-          
+
           <button
-            className={`${styles.addButton} ${isAdded ? styles.added : ''}`}
+            className={`${styles.addButton} ${isAdded ? styles.added : ""}`}
             onClick={handleAddToCart}
             aria-label={`Add ${product.name} to cart`}
           >
