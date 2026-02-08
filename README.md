@@ -47,34 +47,7 @@ It demonstrates clean frontend architecture, backend API design, and a complete 
 
 ---
 
-## 📁 Project Structure
-
-```text
-.
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── routes/
-│   │   ├── middleware/
-│   │   └── data/
-│   ├── Dockerfile
-│   ├── package.json
-│   └── .env
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── context/
-│   │   ├── data/
-│   │   └── styles/
-│   ├── Dockerfile
-│   ├── package.json
-│   └── vite.config.ts
-│
-├── docker-compose.yml
-└── README.md
-
+---
 
 🚀 Running the Application (Docker – Recommended)
 
@@ -148,3 +121,33 @@ Frontend and backend are Dockerized and can be started together using Docker Com
 Mohamed Hussain
 Computer Science Engineering Student
 Frontend & Full-Stack Development Enthusiast
+
+---
+
+## 📁 Project Structure
+
+```text
+.
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── middleware/
+│   │   └── data/
+│   ├── Dockerfile
+│   ├── package.json
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── data/
+│   │   └── styles/
+│   ├── Dockerfile
+│   ├── package.json
+│   └── vite.config.ts
+│
+├── docker-compose.yml
+└── README.md
