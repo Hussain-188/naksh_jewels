@@ -74,3 +74,77 @@ It demonstrates clean frontend architecture, backend API design, and a complete 
 │
 ├── docker-compose.yml
 └── README.md
+
+
+🚀 Running the Application (Docker – Recommended)
+
+Prerequisite: Docker Desktop must be installed and running.
+
+From the project root directory, run:
+
+docker compose up --build
+
+Once the containers are running, access the application:
+
+Frontend: http://localhost:5173
+
+Backend API: http://localhost:5000/products
+
+To stop the containers:
+
+docker compose down
+🧪 Running Without Docker (Optional)
+
+This method can be used if Docker is not available.
+
+Backend
+cd backend
+npm install
+npm start
+
+Backend runs on: http://localhost:5000
+
+Frontend
+cd frontend
+npm install
+npm run dev
+
+Frontend runs on: http://localhost:5173
+
+📝 Notes
+
+Frontend is implemented using React + TypeScript (TSX).
+
+Backend is implemented using Node.js and Express (JavaScript).
+
+Product data is stored in-memory as allowed in the assignment.
+
+Environment variables are managed using .env files and are not committed to the repository.
+
+Frontend and backend are Dockerized and can be started together using Docker Compose.
+
+✅ Assignment Requirements Coverage
+
+✔ Functional React components
+
+✔ Context API for state management
+
+✔ No UI libraries used
+
+✔ Node.js + Express backend
+
+✔ Validation middleware and error handling
+
+✔ Dockerfile for frontend
+
+✔ Dockerfile for backend
+
+✔ docker-compose setup (docker compose up)
+
+✔ Clean and structured codebase
+
+👤 Author
+
+Mohamed Hussain
+Computer Science Engineering Student
+Frontend & Full-Stack Development Enthusiast
